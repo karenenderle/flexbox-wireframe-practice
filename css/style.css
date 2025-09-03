@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card {
+    color: white;
+    text-align: center;
+    padding: 18px 20px;
+    border-radius: 14px;
+}
+
+.header {
+    background-color: purple;
+    color: white;
+}
+
+.footer {
+    background-color: orange;
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.content {
+    background: lightgreen;
+    padding: 18px;
+    border-radius: 14px;
+}
+
+.aside {
+    background: blue;
+    min-height: 56px;
+    border-radius: 14px;
+    order: -1;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.pill {
+    background: hotpink;
+    padding: 26px 0;
+    border-radius: 14px;
+}
