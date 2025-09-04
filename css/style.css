@@ -1,68 +1,71 @@
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.page {
-    max-width: 880px;
-    margin: 0 auto;
-    padding: 16px;
+    max-width: 1200px;
+    font-size: 2rem;
+    color: white;
     display: flex;
     flex-direction: column;
-    gap: 16px;
-}
-
-.card {
-    color: white;
-    text-align: center;
-    padding: 18px 20px;
-    border-radius: 14px;
+    margin: 0 auto;
+    gap: 1rem;
 }
 
 .header {
-    background-color: purple;
-    color: white;
+    background-color: #9f2063;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
 }
 
-.footer {
-    background-color: orange;
-    color: white;
-}
-
-.row {
+.flex-container {
     display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: flex-start;
-    gap: 16px;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
 }
 
-.content {
-    background: lightgreen;
-    padding: 18px;
-    border-radius: 14px;
+.main {
+    background-color: #2ab77f;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+
+.article {
+    background-color: #e4195b;
+    margin: 1rem;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 10px;
 }
 
 .aside {
-    background: blue;
-    min-height: 56px;
-    border-radius: 14px;
-    order: -1;
+    background-color: #0e6394;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
 }
 
-.articles {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+.footer{
+    background-color: #e06b26;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
 }
 
-.articles {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
+@media (width > 800px) {
+    .flex-container {
+        flex-direction: row-reverse;
+    }
 
-.pill {
-    background: hotpink;
-    padding: 26px 0;
-    border-radius: 14px;
+    .aside {
+        display: flex;
+        width: 30%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main {
+        width: 70%;
+    }
 }
